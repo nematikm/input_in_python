@@ -15,12 +15,10 @@ print(f"So, you are {age} old, {height} tall and {weight} heavy.")
 # WARNING! We put an end=' ' at the end of each print line. 
 # This tells print to not change the line with a newline character.
 
-age = int(input('How old are you? '))
-print(f"You are {age} years old")
-print("Press <Enter> to continue.")
-input()
-age2 = int(input('What is the age of your closest cousin? '))
-print(f"He/she is {age2} years old.")
-print("Press <Enter> to continue.")
-input()
-print(f"You have {age + age2} years old together.")
+# a new version that directly assigns an input from the user to a variable.
+age = input('How old are you? ')
+height = input('How tall are you? ')
+weight = input('How much do you weight? ')
+
+print(f"So, you're {age} old, {height} tall and {weight} heavy.")
+
